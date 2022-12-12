@@ -1,20 +1,19 @@
-import reactDOM from 'react-dom' //importar o react-dom e o reactaDom é que vai ser usado
+import reactDOM from 'react-dom' 
 import React from 'react'
 import './index.css'
-// const el = document.getElementById('root')
-// reactDOM.render('Olá React', el) // o método render para renderizar na tela
- // o primeiro parametro é para renderizar na tela 
- // e o segundo elemento é o que vai ser chamado para setar na pag 
+import Primeiro from './components/basicos/Primeiro'
+import ComPar from './components/basicos/ComParamentro'
 
-//
-const log = <strong>Olá React</strong>
+
 reactDOM.render(
     <div> 
-        <strong>
-            {log /*par de chaves é para interpetrar a tag e pegar o valor da cons*/}       
-        </strong> t
+        <Primeiro>
+
+        </Primeiro>
+        <ComPar 
+            titulo="Segundo Comenente"
+            aluno="Alexandro" 
+            nota={9.5} />
     </div>, 
     document.getElementById('root')
 )
-
-//outra forma de fazer uma chamada do root 
