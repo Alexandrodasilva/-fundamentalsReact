@@ -3,17 +3,16 @@ import React from 'react'
 import './index.css'
 import Primeiro from './components/basicos/Primeiro'
 import ComPar from './components/basicos/ComParamentro'
-
+import Fragmento from './components/basicos/Fragmento'
 
 reactDOM.render(
     <div> 
-        <Primeiro>
-
-        </Primeiro>
+        <Primeiro></Primeiro>
         <ComPar 
             titulo="Segundo Comenente"
             aluno="Alexandro" 
             nota={9.5} />
+        <Fragmento></Fragmento>
     </div>, 
     document.getElementById('root')
 )
