@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Olá, sou Alexandro. Estou aprimorando minhas habiolidades com reactj, esse projeto é focado para estudo de conceitos
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
