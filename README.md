@@ -1,4 +1,4 @@
-# Olá, sou Alexandro. Estou aprimorando minhas habiolidades com reactj, esse projeto é focado para estudo de conceitos
+# Olá, sou Alexandro. Estou aprimorando minhas habilidades com React, esse projeto é focado para estudo de conceitos da framework.
 
 
 ## Getting Started with Create React App
