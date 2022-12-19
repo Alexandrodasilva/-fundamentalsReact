@@ -6,6 +6,8 @@ import Number from "./components/basicos/Number";
 import Card from "./layout/Card"
 import Familia from "./components/basicos/Familia";
 import MembroFamilia from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProduto from "./components/repeticao/TabelaProdutos";
 import './App.css'
 
 export default function App(){
@@ -13,11 +15,20 @@ export default function App(){
         <div className="App">
             <h1>Fundamentos React(arrow)</h1>
             <div className="Cards">
+
+                <Card titulo="#07 - Repeticao" color="#FF4C65">
+                    <TabelaProduto></TabelaProduto>
+                </Card>
+
+                <Card titulo="#06 - Repeticao" color="#FF4C65">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo="#05 - componente filho" color="#00C8F8">
                     <Familia sobrenome="silva" idade={12}>
                         <MembroFamilia nome="pedro" />
-                        {/* <MembroFamilia nome="ana"/>
-                        <MembroFamilia nome="junior" /> */}
+                        <MembroFamilia nome="ana"/>
+                        <MembroFamilia nome="junior" />
                     </Familia>
                 </Card>
 

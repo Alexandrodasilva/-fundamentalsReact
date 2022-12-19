@@ -1,10 +1,12 @@
-import React from "react";
-import MembroFamilia from "./FamiliaMembro";
+import React, {cloneElement} from "react";
 
-export default function Familia(props){
+ function Familia(props){
     return(
-        <>
-            {props.children}
-        </>
+        <div>
+           {props.children.map((child, i) => {
+                return cloneElement(child, {...props, Key: i});
+           })}
+        </div>
     );
 }
+export default Familia;
