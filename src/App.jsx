@@ -16,7 +16,7 @@ export default function App(){
             <h1>Fundamentos React(arrow)</h1>
             <div className="Cards">
 
-                <Card titulo="#07 - Repeticao" color="#FF4C65">
+                <Card titulo="#07 - Desafio Repeticao" color="#3A9AD9">
                     <TabelaProduto></TabelaProduto>
                 </Card>
 
