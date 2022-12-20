@@ -5,7 +5,6 @@ export default props => {
     const ifChildrem = props.children.filter(child =>{
         return child !== elseChild;
     })
-    console.log(elseChild)
 
     if(props.test){
         return ifChildrem;

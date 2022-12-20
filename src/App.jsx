@@ -10,6 +10,8 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProduto from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicao/DiretaPai";
+import IndiretaPai from "./components/comunicao/IndiretaPai";
 import './App.css'
 
 export default function App(){
@@ -17,6 +19,14 @@ export default function App(){
         <div className="App">
             <h1>Fundamentos React(arrow)</h1>
             <div className="Cards">
+
+                <Card titulo="#010 - comunicao Indireta" color="#8BAD39">
+                    <IndiretaPai/>
+                </Card>
+
+                <Card titulo="#09 - comunicao direta" color="#59323C">
+                    <DiretaPai/>
+                </Card>
 
                 <Card titulo="#08 - Renderização condicional " color="#982395">
                     <ParOuImpar numero={21}></ParOuImpar>
