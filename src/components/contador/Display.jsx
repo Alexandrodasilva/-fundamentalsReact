@@ -2,9 +2,7 @@ import React from "react";
 
 function Display(props){
     return(
-        <div>
-            
-        </div>
+        <h3>Valor: {props.numero}</h3>
     )
 }
 

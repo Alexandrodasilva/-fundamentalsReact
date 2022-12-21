@@ -1,5 +1,9 @@
 import React, {Component} from "react";
 import "./Contador.css"
+import Display from "./Display";
+import Botoes from "./Botoes";
+import PassoForm from "./PassoForm";
+
 class Contador extends Component{
     state = {
         numero: this.props.valorInicial || 0,
@@ -17,26 +21,18 @@ class Contador extends Component{
         })
     }
 
-    setPasso = (e) => { // o (e) é um evento dessa arrow function
+    setPasso = (novoPasso) => { // o (e) é um evento dessa arrow function
         this.setState({
-            passo: +e.target.value, // o + é para transformar o valor string que vai vim para um valor interio
+            passo: novoPasso, // o + é para transformar o valor string que vai vim para um valor interio
         });
     };
     render(){
         return(
             <div className="Contador">
                 <h2>Contador</h2>
-                <p>Valor: {this.state.numero}</p>
-                <div>
-                    <label htmlFor="passoInput"> Passo: </label>
-                    <input id="passoInput" 
-                    type="number"
-                    value={this.state.passo}
-                    onChange={this.setPasso}
-                    />
-                </div>
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
+                <Display numero={this.state.numero}></Display>
+                <PassoForm passo={this.state.passo} setPasso={this.setPasso} ></PassoForm>
+                <Botoes onInc={this.inc} onDec={this.dec}></Botoes>
             </div>
         )
     }
