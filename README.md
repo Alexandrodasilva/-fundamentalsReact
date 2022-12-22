@@ -1,5 +1,8 @@
 # Olá, sou Alexandro. Estou aprimorando minhas habilidades com React, esse projeto é focado para estudo de conceitos da framework.
 
+# o que teve nesse módulo
+
+## como criar componente, passar parametro, comunicação direta e indireta, componente controlado, componente clássico, estado de componente
 
 ## Getting Started with Create React App
 
