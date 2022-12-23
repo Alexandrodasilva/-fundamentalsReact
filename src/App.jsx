@@ -15,6 +15,7 @@ import IndiretaPai from "./components/comunicao/IndiretaPai";
 import Input from "./components/formulario/Input";
 import Contador from "./components/contador/Contador";
 import Mega from "./components/mega/Mega";
+import Cadastro from "./components/cadastro/Cadastro";
 import './App.css'
 
 export default function App(){
@@ -22,6 +23,9 @@ export default function App(){
         <div className="App">
             <h1>Fundamentos React(arrow)</h1>
             <div className="Cards">
+                <Card titulo="#014 - Cadastro" color="#00000">
+                    <Cadastro></Cadastro>
+                </Card>
 
                 <Card titulo="#013 - Mega" color="#B90006E">
                     <Mega qtde={8}></Mega>
